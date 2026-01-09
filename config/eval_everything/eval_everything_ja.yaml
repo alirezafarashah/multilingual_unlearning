@@ -1,0 +1,69 @@
+model_path: ../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/
+model_family: aya-expanse-8B
+language: ja
+save_dir: ${model_path}/eval_results/ds_size${ds_size}_${language}
+
+# dataset path for each of the 4 datasets to be evaluated
+
+# for english
+# data_path: [locuslab/TOFU, locuslab/TOFU, locuslab/TOFU, locuslab/TOFU]
+# split: forget01_perturbed
+# split_list:
+#   - retain_perturbed
+#   - real_authors_perturbed
+#   - world_facts_perturbed
+#   - ${split}
+
+# question_key: [question, question, question, question]
+# answer_key: [answer, answer, answer, answer]
+
+# base_answer_key: [paraphrased_answer, answer, answer, paraphrased_answer]
+# perturbed_answer_key: [perturbed_answer, perturbed_answer, perturbed_answer, perturbed_answer]
+
+# eval_task: [eval_log, eval_real_author_wo_options, eval_real_world_wo_options, eval_log_forget]
+
+#for other languages
+
+retainpath: ./trans_tofu/retain_perturbed_${language}
+perturebpath: ./trans_tofu/forget01_perturbed_${language}
+realworldpath: ./trans_tofu/real_authors_perturbed_${language}
+worldfactpath: ./trans_tofu/world_facts_perturbed_${language}
+data_path:
+  - ${retainpath}
+  - ${realworldpath}
+  - ${worldfactpath}
+  - ${perturebpath}
+
+# below are not important just change the dataset path
+split: forget01_perturbed
+split_list:
+  - retain_perturbed
+  - real_authors_perturbed
+  - world_facts_perturbed
+  - ${split}
+
+question_key: [question, question, question, question]
+answer_key: [answer, answer, answer, answer]
+
+base_answer_key: [paraphrased_answer, answer, answer, paraphrased_answer]
+perturbed_answer_key: [perturbed_answer, perturbed_answer, perturbed_answer, perturbed_answer]
+
+eval_task: [eval_log, eval_real_author_wo_options, eval_real_world_wo_options, eval_log_forget]
+
+
+generation:
+  max_length: 200
+  max_new_tokens: null
+
+save_generated_text: true
+
+ds_size: null
+
+overwrite: true
+use_pretrained: false
+
+batch_size: 30
+reinitialize_weights: false
+
+retain_result: null
+

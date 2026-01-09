@@ -1,0 +1,21 @@
+
+Results for model: ../scratch/tofu_finetuned_5epoch_aya_all_lang_5e5/
+en: 10.5469
+fr: 9.3888
+fa: 9.8816
+ar: 9.9724
+hi: 6.4113
+----------------------------------------
+
+Results for model: ../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/
+iw: 11.4778
+id: 14.2895
+en: 16.7099
+fr: 9.9681
+ru: 13.0243
+ar: 8.4695
+ja: 13.1415
+fa: 10.7116
+hi: 4.8632
+ko: 8.6762
+----------------------------------------

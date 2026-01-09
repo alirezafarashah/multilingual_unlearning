@@ -1,0 +1,11 @@
+model_family: aya-expanse-8B
+
+data_path: ../TOFU/trans_tofu/retain99_merged_all_10_lang/
+batch_size: 12
+gradient_accumulation_steps: 1
+num_epochs: 5
+lr: 2e-5
+save_dir: ../scratch/tofu_finetuned_5epoch_aya_retain_10_lang_2e5_full/
+
+weight_decay: 0.01
+seed: 42

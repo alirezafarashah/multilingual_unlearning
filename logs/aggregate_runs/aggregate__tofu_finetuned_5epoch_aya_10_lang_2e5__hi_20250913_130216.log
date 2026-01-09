@@ -1,0 +1,7 @@
+Error executing job with overrides: ['lang=hi', 'ckpt_result=../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/eval_results/ds_sizeNone_hi/eval_log_aggregated.json', 'retain_result=../scratch/tofu_finetuned_5epoch_aya_retain_10_lang_2e5_full/eval_results/ds_sizeNone_hi/eval_log_aggregated.json', 'method_name=temp', 'submitted_by=Marylou_Alireza', 'save_file=results/aya_graddiff_10lang/tofu_finetuned_5epoch_aya_10_lang_2e5__retain_result01_unlearn_graddif_2e-05_hi.csv']
+Traceback (most recent call last):
+  File "/home/mila/a/alireza.farashah/TOFU/aggregate_eval_stat.py", line 96, in main
+    retain_result = json.load(open(cfg.retain_result))
+FileNotFoundError: [Errno 2] No such file or directory: '../scratch/tofu_finetuned_5epoch_aya_retain_10_lang_2e5_full/eval_results/ds_sizeNone_hi/eval_log_aggregated.json'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

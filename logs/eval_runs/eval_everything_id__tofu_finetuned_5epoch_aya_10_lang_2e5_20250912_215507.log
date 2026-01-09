@@ -1,0 +1,18 @@
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Loading checkpoint from ../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 18.64it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 22.01it/s]
+Working on eval task eval_log with split retain_perturbed
+  0%|          | 0/14 [00:00<?, ?it/s]  0%|          | 0/14 [00:01<?, ?it/s]
+Error executing job with overrides: ['model_path=../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/']
+Traceback (most recent call last):
+  File "/home/mila/a/alireza.farashah/TOFU/evaluate_util.py", line 299, in main
+    eval_logs = get_all_evals(cfg, model, tokenizer, eval_task, eval_dataloader, base_eval_dataloader, perturb_dataloader, normalize_gt=normalize_gt, language=cfg.language)
+  File "/home/mila/a/alireza.farashah/TOFU/evaluate_util.py", line 184, in get_all_evals
+    input_string, gen_output, gt = run_generation(cfg, batch, model, tokenizer=tokenizer, language=language)
+  File "/home/mila/a/alireza.farashah/TOFU/evaluate_util.py", line 367, in run_generation
+    ground_truth = [s.split(split_symbol)[1] for s in input_strings]
+  File "/home/mila/a/alireza.farashah/TOFU/evaluate_util.py", line 367, in <listcomp>
+    ground_truth = [s.split(split_symbol)[1] for s in input_strings]
+IndexError: list index out of range
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

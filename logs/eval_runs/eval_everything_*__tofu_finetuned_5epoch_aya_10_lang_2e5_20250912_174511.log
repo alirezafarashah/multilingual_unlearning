@@ -1,0 +1,4 @@
+Primary config directory not found.
+Check that the config directory '/home/mila/a/alireza.farashah/TOFU/configs/eval_everything' exists and readable
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

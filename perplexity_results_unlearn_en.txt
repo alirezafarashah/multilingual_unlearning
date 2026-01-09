@@ -1,0 +1,21 @@
+
+Results for model: ../scratch/tofu_finetuned_5epoch_aya_all_lang_5e5/grad_diff_2e-05_forget01_5_en/
+en: 12.1085
+fr: 10.5416
+fa: 10.8605
+ar: 11.8110
+hi: 7.0226
+----------------------------------------
+
+Results for model: ../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/grad_diff_2e-05_forget01_5_en/
+iw: 12.0052
+id: 15.0030
+en: 17.3231
+fr: 10.4742
+ru: 13.6325
+ar: 8.9967
+ja: 13.8107
+fa: 11.3445
+hi: 5.1282
+ko: 9.0809
+----------------------------------------

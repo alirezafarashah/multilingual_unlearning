@@ -1,0 +1,13 @@
+
+Results for model: /home/mila/a/alireza.farashah/scratch/models/en_grad_diff_KL/
+iw: 10.2594
+id: 13.4063
+en: 15.1571
+fr: 9.5085
+ru: 11.9825
+ar: 7.2686
+ja: 12.7879
+fa: 9.1297
+hi: 4.4009
+ko: 7.9603
+----------------------------------------
