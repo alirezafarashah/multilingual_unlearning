@@ -1,0 +1,20 @@
+model_path: ../scratch/tofu_finetuned_5epoch_aya_all_lang_5e5/
+save_dir: ../scratch/eval_finetune_aya_ar/
+
+batch_size: 24
+data_path: ./full_ar
+language: ar
+eval_task: eval_log
+question_key: question
+answer_key: answer
+device: cuda
+generation:
+  max_length: 200
+  max_new_tokens: null
+save_generated_text: true
+ds_size: null
+
+overwrite: true
+use_pretrained: false
+
+model_family: aya-expanse-8B 

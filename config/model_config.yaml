@@ -1,0 +1,30 @@
+aya-expanse-8B:
+  hf_key: "CohereForAI/aya-expanse-8b"
+  question_start_tag:
+    en: "Question: "
+    fr: "Question: "
+    ar: "السؤال: "
+    fa: "سوال: "
+    hi: "प्रश्न: "
+    iw: "שאלה: "          # Hebrew
+    id: "Pertanyaan: "    # Indonesian
+    ja: "質問: "          # Japanese
+    ko: "질문: "          # Korean
+    ru: "Вопрос: "        # Russian
+  question_end_tag: " \n"
+  answer_tag:
+    en: "Answer: "
+    fr: "Reponse: "
+    ar: "الإجابة: "
+    fa: "پاسخ: "
+    hi: "उत्तर: "
+    iw: "תשובה: "        # Hebrew
+    id: "Jawaban: "       # Indonesian
+    ja: "回答: "          # Japanese
+    ko: "답변: "          # Korean
+    ru: "Ответ: "         # Russian
+  flash_attention2: "true"
+  gradient_checkpointing: "false"
+  ft_model_path: "maral/tofu_ft_aya"
+
+
