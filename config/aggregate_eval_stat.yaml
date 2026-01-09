@@ -1,7 +1,0 @@
-lang: en
-retain_result: ../scratch/tofu_finetuned_5epoch_aya_retain_10_lang_2e5_full/eval_results/ds_sizeNone_${lang}/eval_log_aggregated.json
-# ckpt_result: ../scratch/tofu_finetuned_5epoch_llama/eval_results/ds_sizeNone_${lang}/eval_log_aggregated.json
-ckpt_result:  ../scratch/tofu_finetuned_5epoch_aya_10_lang_2e5/eval_results/ds_sizeNone_${lang}/eval_log_aggregated.json
-method_name: temp
-submitted_by: Alireza
-save_file: ./results/aya_graddiff_10lang/finetune_result01_unlearn_npo_2e-05_${lang}.csv
