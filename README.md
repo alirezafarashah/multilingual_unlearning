@@ -151,16 +151,17 @@ config/aggregate_eval_stat.yaml
 ## 📚 Citation
 
 If you use this repository, please cite our paper:
-
-<!-- ```bibtex
-@inproceedings{
-farashah2026multilingual,
-title={Multilingual Amnesia: On the Transferability of Unlearning in Multilingual {LLM}s},
-author={Alireza Dehghanpour Farashah and Aditi Khandelwal and Marylou Fauchard and Zhuan Shi and Negar Rostamzadeh and Golnoosh Farnadi},
-booktitle={19th Conference of the European Chapter of the Association for Computational Linguistics},
-year={2026}
-} -->
-<!-- ``` -->
+```bibtex
+@misc{farashah2026multilingualamnesiatransferabilityunlearning,
+  title         = {Multilingual Amnesia: On the Transferability of Unlearning in Multilingual LLMs},
+  author        = {Dehghanpour Farashah, Alireza and Khandelwal, Aditi and Fauchard, Marylou and Shi, Zhuan and Rostamzadeh, Negar and Farnadi, Golnoosh},
+  year          = {2026},
+  eprint        = {2601.05641},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2601.05641}
+}
+```
 
 ---
 
