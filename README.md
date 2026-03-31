@@ -1,4 +1,5 @@
-# Multilingual Amnesia: On the Transferability of Unlearning in Multilingual LLMs
+# [CVPR 2026] Multilingual Amnesia: On the Transferability of Unlearning in Multilingual LLMs
+[![arXiv](https://img.shields.io/badge/arXiv-2601.05641-b31b1b.svg)](https://arxiv.org/abs/2601.05641)
 
 This is the **official repository** for the paper:
 
